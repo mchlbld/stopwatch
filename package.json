@@ -1,18 +1,23 @@
 {
-  "name": "stopwatch",
-  "version": "0.0.1",
+  "name": "stopwatch-dev",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "jest"
   },
-  "private": true,
-  "keywords": ["stopwatch"],
-  "author": "mchlbld",
+  "keywords": [
+    "stopwatch"
+  ],
+  "author": "mchl_bld",
   "license": "MIT",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.24.1",
     "jest": "^29.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mchlbld/stopwatch"
   }
 }
