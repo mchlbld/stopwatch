@@ -1,6 +1,6 @@
 {
   "name": "stopwatch-dev",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Stopwatch intended to be used for timing functions calls in JavaScript/TypeScript.",
   "main": "index.js",
   "type": "module",

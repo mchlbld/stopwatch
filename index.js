@@ -25,7 +25,7 @@ export class Duration {
   }
 
   toString() {
-    return `${this.hours}${this.minutes}${this.seconds}.${this.millies}`;
+    return `${this.hours}:${this.minutes}:${this.seconds}.${this.millies}`;
   }
 }
 
