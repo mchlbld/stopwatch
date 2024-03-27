@@ -1,5 +1,6 @@
 # Stopwatch
 
+[![npm version](https://badge.fury.io/js/stopwatch-dev.svg)](https://badge.fury.io/js/stopwatch-dev)
 A simple stopwatch app that allows you to start, stop, and reset the timer. Intended to be used for timing functions calls in JavaScript/TypeScript.
 
 ## Installation
