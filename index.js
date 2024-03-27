@@ -3,13 +3,18 @@ export class Duration {
     this.startTime = startTime;
     this.endTime = endTime;
 
-    const milliesStart = this.toMillies(startTime);
-    const milliesEnd = this.toMillies(endTime);
+    const milliesDiff = this.duration();
+    this.millies = milliesDiff % 1000;
+    this.seconds = Math.floor(milliesDiff / 1_000) % 60;
+    this.minutes = Math.floor(milliesDiff / 1000 / 60) % 60;
+    this.hours = Math.floor(milliesDiff / 1000 / 60 / 60);
+  }
 
-    this.millies = milliesEnd - milliesStart;
-    this.seconds = Math.floor(this.millies / 1_000);
-    this.minutes = Math.floor(this.millies / 1000 / 60);
-    this.hours = Math.floor(this.millies / 1000 / 60 / 60);
+  duration() {
+    const milliesStart = this.toMillies(this.startTime);
+    const milliesEnd = this.toMillies(this.endTime);
+
+    return Math.round(milliesEnd - milliesStart);
   }
 
   toMillies([seconds, nanos]) {
