@@ -1,0 +1,19 @@
+{
+  "name": "stopwatch",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "private": true,
+  "keywords": [
+    "stopwatch"
+  ],
+  "author": "mchlbld",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.24.1",
+    "jest": "^29.7.0"
+  }
+}
