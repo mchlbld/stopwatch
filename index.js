@@ -59,8 +59,32 @@ export class Stopwatch {
     return new Duration(this.startTime, this.endTime);
   }
 
+  resume() {
+    if (!this.startTime) {
+      throw new Error("Stopwatch was not started");
+    }
+
+    if (!this.endTime) {
+      throw new Error("Stopwatch was not stopped");
+    }
+
+    const diff = process.hrtime(this.endTime);
+    this.startTime = [this.startTime[0] + diff[0], this.startTime[1] + diff[1]];
+    this.endTime = undefined;
+  }
+
+  lap() {
+    const duration = new Duration(
+      this.lastLap ?? this.startTime,
+      process.hrtime(),
+    );
+    this.lastLap = process.hrtime();
+    return duration;
+  }
+
   reset() {
     this.startTime = undefined;
     this.endTime = undefined;
+    this.lastLap = undefined;
   }
 }
