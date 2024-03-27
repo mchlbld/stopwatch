@@ -1,5 +1,8 @@
 export class Duration {
   constructor(startTime, endTime) {
+    if (!startTime || !endTime) {
+      throw Error("startTime and endTime must be defined");
+    }
     this.startTime = startTime;
     this.endTime = endTime;
 
@@ -22,7 +25,7 @@ export class Duration {
   }
 
   toString() {
-    return `${this.hours}h ${this.minutes}m ${this.seconds}s ${this.millies}ms`;
+    return `${this.hours}${this.minutes}${this.seconds}.${this.millies}`;
   }
 }
 

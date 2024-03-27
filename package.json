@@ -3,13 +3,12 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
   "private": true,
-  "keywords": [
-    "stopwatch"
-  ],
+  "keywords": ["stopwatch"],
   "author": "mchlbld",
   "license": "MIT",
   "devDependencies": {
