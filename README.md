@@ -36,3 +36,7 @@ const totalMillies = stopwatch.duration();
 console.log(duration);
 // prints: 1:23:45.678 (hours:minutes:seconds.millies)
 ```
+
+## Links
+
+- [npm](https://www.npmjs.com/package/stopwatch-dev)
