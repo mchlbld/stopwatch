@@ -37,6 +37,18 @@ console.log(duration);
 // prints: 1:23:45.678 (hours:minutes:seconds.millies)
 ```
 
+## Testing
+
+To run the tests, use the following command:
+
+```bash
+pnpm test
+```
+
 ## Links
 
 - [npm](https://www.npmjs.com/package/stopwatch-dev)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
