@@ -32,7 +32,7 @@ const minutes = stopwatch.minutes();
 const hours = stopwatch.hours();
 
 // ... or get complete millieseconds
-const totalMillies = stopwatch.duration();
+const totalMillies = duration.duration();
 
 // ... or print the duration
 console.log(duration);
